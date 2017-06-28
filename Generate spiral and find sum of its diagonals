@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+	int n;
+	scanf("%d",&n);
+	int sum=1,pos=1,inc=2;
+	while(pos < n*n){
+		for(int i=0;i<4;i++){
+			pos+=inc;
+			sum+=pos;
+		}
+		inc+=2;
+	}
+	printf("%d ",sum);
+	return 0;
+}
